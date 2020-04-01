@@ -7,24 +7,23 @@
 #include "Tool.h"
 
 class Pump: public Tool {
-
-
-	public:
-
-		Pump();
-		bool Initialise(std::string configfile,DataModel &data);
-		bool Execute();
-		bool Finalise();
-
-		void TurnOn();
-		void TurnOff();
-
-	private:
-
-		int pumppin;
-
-
-
+  
+  
+ public:
+  
+  Pump();
+  bool Initialise(std::string configfile,DataModel &data);
+  bool Execute();
+  bool Finalise();
+  
+  void TurnOn();
+  void TurnOff();
+  
+ private:
+  
+  int pumppin;
+  
+  
 };
 
 
